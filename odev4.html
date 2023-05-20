@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odev 4</title>
+</head>
+<body>
+   <form action="odev4.php" method="post"> 
+    <table cellspacing="5" cellpading="10" width="35%">
+        <tr>
+            <td align="center">
+            <h3><u><b>Project Management</b></u></h3>
+            </td>
+        </tr>
+    </table>
+    <table bgcolor="aqua" cellspacing="10" cellpading="10">
+        <tr>
+            <td>Project Name: </td>
+            <td><input type="text" name="projname" id="projname" placeholder="project name"></td>
+        </tr>
+        <tr>
+            <td>Assigned to:</td>
+            <td>
+                <select name="assign" id="assign">
+                    <option value="1">Emre Kurt</option>
+                    <option value="2">Fatih Terim</option>
+                    <option value="3">Alihan Sağlık</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Start Date</td>
+            <td><input type="date" name="baslangic" id="baslangic"></td>
+        </tr>
+        <tr>
+            <td>End Date</td>
+            <td><input type="date" name="bitis" id="bitis"></td>
+        </tr>
+        <tr>
+            <td>Priority</td>
+            <td>
+                <input type="radio" name="select1" id="high"> High
+                <input type="radio" name="select1" id="Average"> Average
+                <input type="radio" name="select1" id="Low"> Low
+            </td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td><textarea name="aciklama" id="" cols="30" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td align="right">
+                <input type="submit" value="Submit">
+            </td>
+            <td>
+                <input type="reset" value="Clear">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
